@@ -14,7 +14,7 @@ export default function App() {
   const { getSidebarOpen, setSidebarOpen } = useGlobalStore();
   const sidebarOpen = getSidebarOpen();
   return (
-    <Router basename="/cleaner-service">
+    <Router>
       <ScrollToTop /> {/* ✅ Ensures scroll resets on route change */}
       <div className="relative h-screen">
         <div className="flex-1">
