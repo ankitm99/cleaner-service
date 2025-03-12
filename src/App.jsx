@@ -21,6 +21,7 @@ export default function App() {
           <Header />
           <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           <Routes>
+            <Route path="cleaner-service" element={<MainContent />} />
             <Route path="/" element={<MainContent />} />
             {/* Parent route with child routes */}
             <Route path="services" element={<Services />} />
