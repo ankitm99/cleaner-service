@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/cleaner-service"
+  base: "/cleaner-service/"
 })
