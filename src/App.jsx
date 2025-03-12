@@ -14,14 +14,14 @@ export default function App() {
   const { getSidebarOpen, setSidebarOpen } = useGlobalStore();
   const sidebarOpen = getSidebarOpen();
   return (
-    <Router>
+    <Router basename="/cleaner-service">
       <ScrollToTop /> {/* ✅ Ensures scroll resets on route change */}
       <div className="relative h-screen">
         <div className="flex-1">
           <Header />
           <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           <Routes>
-            <Route path="cleaner-service" element={<MainContent />} />
+            <Route path="/" element={<MainContent />} />
             {/* Parent route with child routes */}
             <Route path="services" element={<Services />} />
             <Route path="/services/:id" element={<ServiceDetails />} />

@@ -11,7 +11,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }) {
     >
       <div className="h-12"></div>
       {/* Accordion Component */}
-      <SidebarOption label="HOME" path="cleaner-service" />
+      <SidebarOption label="HOME" path="/" />
       <SidebarOption label="ABOUT US" path="/about" />
       <SidebarOption
         label="SERVICES"
